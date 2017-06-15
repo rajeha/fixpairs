@@ -22,9 +22,9 @@ $ fix_pairs.pl read1.fq read2.fq fixed
 Quick check:
 ```
 $ wc -l fixed1.fq fixed2.fq fixed_unpaired.fq
-  2268 r1.fq
-  2268 r2.fq
-   280 r_unpaired.fq
+  2268 fixed1.fq
+  2268 fixed2.fq
+   280 fixed_unpaired.fq
   4816 total
 ```
 ```
