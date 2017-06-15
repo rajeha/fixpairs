@@ -28,7 +28,7 @@ $ wc -l fixed1.fq fixed2.fq fixed_unpaired.fq
   4816 total
 ```
 ```
-$ head -1 read1.fq read2.fq
+$ head -1 fixed1.fq fixed2.fq
 ==> fixed1.fq <==
 @SRR1297048.3347589/1
 
