@@ -3,8 +3,8 @@ Fixes read pairs in two fastq files.
 __Example:__
 ```
 $ wc -l read1.fq read2.fq
-  2400 r1.tmp
-  2416 r2.tmp
+  2400 read1.tmp
+  2416 read2.tmp
   4816 total
 ```
 ```
