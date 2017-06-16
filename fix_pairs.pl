@@ -38,7 +38,7 @@ while (1) {
 	last unless $r1 || $r2;
 
 	if ($r1) {
-		$nm1 = (split /\//, $r1->[0])[0]; # name of the read	
+		$nm1 = (split /\//, $r1->[0])[0]; # name of the read (assumes pairs labeled with /1 and /2)
 		$rd1{$nm1} = $r1;
 	}
 
