@@ -8,7 +8,7 @@ my $fnm1 = shift @ARGV or die $usage;
 my $fnm2 = shift @ARGV or die $usage;
 my $opref = shift @ARGV or die $usage;
 
-sub getread {
+sub getread { # read an arrayref of the 4 lines representing a read in fastq
 	my $fh = shift;
 	my @allread;
 
@@ -47,6 +47,7 @@ while (1) {
 		$rd2{$nm2} = $r2;
 	}
 
+	# test if the read from file1 has occured in file2 
 	if ($r1 && $nm1 ~~ [ keys %rd2 ]) {
 		print $out1 @{$rd1{$nm1}};
 		print $out2 @{$rd2{$nm1}};
@@ -54,6 +55,7 @@ while (1) {
 		delete $rd2{$nm1};
 	}
 
+	# test if the read from file2 has occured in file1
 	if ($r2 && $nm2 ~~ [ keys %rd1 ]) {
 		print $out1 @{$rd1{$nm2}};
 		print $out2 @{$rd2{$nm2}};
